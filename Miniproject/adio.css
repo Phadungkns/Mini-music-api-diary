@@ -1,0 +1,62 @@
+#adolist{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;     
+}
+#viewplay{background-color: black;}
+.lolo{margin-left: 50px;}
+#rotate{
+    animation: rotation 20s infinite linear;
+
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+audio:hover, audio:focus, audio:active
+{
+-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+transform: scale(1.05);
+}
+
+
+audio
+{
+-webkit-transition:all 0.5s linear;
+-moz-transition:all 0.5s linear;
+-o-transition:all 0.5s linear;
+transition:all 0.5s linear;
+-moz-box-shadow: 2px 2px 4px 0px #006773;
+-webkit-box-shadow:  2px 2px 4px 0px #006773;
+box-shadow: 2px 2px 4px 0px #01a30f;
+-moz-border-radius:7px 7px 7px 7px ;
+-webkit-border-radius:7px 7px 7px 7px ;
+border-radius:7px 7px 7px 7px ;
+}
+#mname{
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  text-shadow: 1px 1px 2px gray;
+  font-family: "Noto sans thai";
+}
+#art{
+  font-weight: bold;
+  color: black;
+  text-shadow: 1px 1px 2px gray;
+  margin-left: 25px;
+}
+#cra{
+  font-weight: bold;
+  color: black;
+  text-shadow: 1px 1px 2px gray;
+  margin-left: 25px;
+}
