@@ -8,6 +8,20 @@ const app = express();
 const port = 3000;
 
 app.use(cors())
+
+const path = require('path');
+
+// ใช้ path.resolve เพื่ออ้าง path แบบชัดเจน
+const rootDir = path.resolve(__dirname, '..');
+
+// Serve static files (JS, CSS, รูป)
+app.use(express.static(rootDir));
+
+// Serve index.html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(rootDir, 'index.html'));
+});
+
 app.use(express.json());
 
 
