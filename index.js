@@ -1,6 +1,6 @@
 let data = []; //เก็บข้อมูลที่ดึงมาจาก JSON ในตัวแปรนี้
 
-const jsonData = "Mini-music-api-diary88.onrender.com";
+const jsonData = "Mini-music-api-diary99.onrender.com";
 
 //ฟังก์ชันสำหรับเพิ่มข้อมูล
 function addData() {
@@ -105,7 +105,7 @@ function denyAddData() {
 //ฟังก์ชันสำหรับดึงข้อมูลจาก JSON มาแสดงผล
 async function getData() {
     try {
-        const response = await fetch(jsonData + "/music/get");
+        const response = await fetch(jsonData + "https://mini-music-api-diary99.onrender.com/music/get");
         data = await response.json();
 
         let mainData = document.getElementById("adolist");
