@@ -1,6 +1,6 @@
 let data = []; //เก็บข้อมูลที่ดึงมาจาก JSON ในตัวแปรนี้
 
-const jsonData = "http://localhost:3000";
+const jsonData = "https://Mini-music-api-diary55.onrender.com";
 
 //ฟังก์ชันสำหรับเพิ่มข้อมูล
 function addData() {
