@@ -6,10 +6,10 @@ const Music = require('./music');
 
 const app = express();
 const port = 3000;
+const path = require('path');
 
 app.use(cors())
-
-const path = require('path');
+app.use(express.json());
 
 // ใช้ path.resolve เพื่ออ้าง path แบบชัดเจน
 const rootDir = path.resolve(__dirname, '..');
@@ -21,9 +21,6 @@ app.use(express.static(rootDir));
 app.get('/', (req, res) => {
   res.sendFile(path.join(rootDir, 'index.html'));
 });
-
-app.use(express.json());
-
 
 //Connect DB
 const db = "mongodb+srv://admin:12345678910@cluster0.g1f3kfq.mongodb.net/music?retryWrites=true&w=majority";
